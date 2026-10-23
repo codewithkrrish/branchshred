@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "branchshred"
+version = "1.0.0"
+description = "Find and prune stale git branches across every repo in a folder"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Krrish", email = "codewithkrrish7@gmail.com" }]
+keywords = ["git", "cli", "branches", "cleanup", "developer-tools"]
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+branchshred = "branchshred.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/codewithkrrish/branchshred"
+
+[tool.setuptools.packages.find]
+include = ["branchshred*"]
